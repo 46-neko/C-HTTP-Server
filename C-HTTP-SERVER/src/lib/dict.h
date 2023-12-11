@@ -3,16 +3,16 @@
 
 struct DictEntry
 {
-	void* key;
+	char* key;
 	void* value;
 
 	struct DictEntry* left;
 	struct DictEntry* right;
 };
 
-struct DictEntry* dictEntry(void* key, void* value);
-struct DictEntry* addEntry(struct DictEntry* root, void* key, void* value);
-struct DictEntry* search(struct DictEntry* root, void* key);
+struct DictEntry* dictEntry(char* key, void* value);
+struct DictEntry* addEntry(struct DictEntry* root, char* key, void* value);
+struct DictEntry* search(struct DictEntry* root, char* key);
 void getDictInOrder(struct DictEntry* root);
 
 #endif // !DICT_H

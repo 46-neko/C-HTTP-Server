@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct DictEntry* dictEntry(void* key, void* value)
+struct DictEntry* dictEntry(char* key, void* value)
 {
 	struct DictEntry* dictEntry = (struct DictEntry*)malloc(sizeof(struct DictEntry));
 
@@ -15,7 +15,7 @@ struct DictEntry* dictEntry(void* key, void* value)
 	return dictEntry;
 }
 
-struct DictEntry* addEntry(struct DictEntry* root, void* key, void* value)
+struct DictEntry* addEntry(struct DictEntry* root, char* key, void* value)
 {
 	if (!root) {
 		return dictEntry(key, value);
@@ -37,7 +37,7 @@ struct DictEntry* addEntry(struct DictEntry* root, void* key, void* value)
 	return;
 }
 
-struct DictEntry* search(struct DictEntry* root, void* key)
+struct DictEntry* search(struct DictEntry* root, char* key)
 {
 	if (!root) {
 		return NULL;
