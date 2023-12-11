@@ -19,7 +19,7 @@ void serve(const char* ADDRESS, const char* PORT)
 	SOCKET serverFD;
 	struct addrinfo* res;
 	struct sockaddr_in serverAddr;
-	rootRoute = dictEntry("/", "http/index.html");
+	rootRoute = registerRoutes();
 	memset(&serverAddr, 0, sizeof(serverAddr));
 
 	res = createSocketFD(ADDRESS, PORT, &serverFD);

@@ -61,8 +61,8 @@ void getDictInOrder(struct DictEntry* root)
 {
 	if (root) {
 		getDictInOrder(root->left);
-		printf("%d:", root->key);
-		printf("%d\n", root->value);
+		printf("%s:", root->key);
+		printf("\"%s\"\n", root->value);
 		getDictInOrder(root->right);
 	}
 	return;
