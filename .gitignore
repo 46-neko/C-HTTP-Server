@@ -53,4 +53,5 @@ dkms.conf
 
 .vs
 
+./x64
 ./C-HTTP-SERVER/x64

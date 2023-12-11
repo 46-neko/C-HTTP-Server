@@ -166,7 +166,8 @@ void processGET(size_t* responseLen, char* response, const char* urlRoute)
 {
 	printf("Processing GET request...\n");
 
-	struct DictEntry* dest = search(rootRoute, urlRoute);
+	struct DictEntry* dest = NULL;
+	dest = search(rootRoute, urlRoute);
 	if (!dest) {
 		notFound(response);
 		*responseLen = strlen(response);
