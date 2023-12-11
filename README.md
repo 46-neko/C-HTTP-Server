@@ -12,8 +12,6 @@ pthreadVC3.lib
 ```bash
 Inside .exe folder:
 pthreadVC3.dll
-pthreadVCE3.dll
-pthreadVSE3.dll
 ```
 
 ## References
