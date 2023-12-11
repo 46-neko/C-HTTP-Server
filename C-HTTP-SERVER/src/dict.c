@@ -22,19 +22,20 @@ struct DictEntry* addEntry(struct DictEntry* root, char* key, void* value)
 	}
 
 	if (strcmp(key, root->key) == 0) {
-		printf("The %s value already exists!", key);
-		return;
+		printf("The %s value already exists! Replacing...", key);
+		root->value = value;
+		return root;
 	}
 
 	if (strcmp(key, root->key) > 0) {
-		root->right = addEntry(root, key, value);
+		root->right = addEntry(root->right, key, value);
 	}
 
 	else {
-		root->left = addEntry(root, key, value);
+		root->left = addEntry(root->left, key, value);
 	}
 
-	return;
+	return root;
 }
 
 struct DictEntry* search(struct DictEntry* root, char* key)
