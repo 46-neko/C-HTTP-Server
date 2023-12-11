@@ -20,7 +20,7 @@ pthreadVC3.dll
 
 [Geeks for Geeks' BST examples](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
 
-[JeffreytheCoder's Server](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+[JeffreytheCoder's Server](https://github.com/JeffreytheCoder/Simple-HTTP-Server)
 
 ## ETC.
 
